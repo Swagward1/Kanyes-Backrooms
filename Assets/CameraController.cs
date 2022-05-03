@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    [SerializeField] WallRunning wallRun;
+    //[SerializeField] WallRunning wallRun;
     [SerializeField] Transform cam;
     [SerializeField] Transform orientation;
 
@@ -11,7 +11,7 @@ public class CameraController : MonoBehaviour
     [SerializeField] float sensY;
     float mouseX;
     float mouseY;
-
+    
     float xRot;
     float yRot;
 
@@ -27,7 +27,7 @@ public class CameraController : MonoBehaviour
     {
         CameraInput();
 
-        cam.transform.localRotation = Quaternion.Euler(xRot, yRot, wallRun.tilt);
+        cam.transform.localRotation = Quaternion.Euler(xRot, yRot, 0);
         orientation.transform.rotation = Quaternion.Euler(0, yRot, 0);
     }
 
