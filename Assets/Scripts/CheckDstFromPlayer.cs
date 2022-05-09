@@ -14,9 +14,9 @@ public class CheckDstFromPlayer : MonoBehaviour
     void Update()
     {
         Vector3 distToPlayer = transform.position - player.transform.position;
-        Debug.Log(distToPlayer.magnitude);
+        //Debug.Log(distToPlayer.magnitude);
 
-        if(distToPlayer.magnitude < validDistFromPlayer)
+        if (distToPlayer.magnitude < validDistFromPlayer)
         {
             anim.SetTrigger("DoorActive");
             Destroy(gameObject, 3f);
