@@ -26,7 +26,7 @@ public class GunCollectable : MonoBehaviour
         anim = GetComponent<Animator>();
 
         //gun setup if player does not start with gun.
-        if(!equipped)
+        if (!equipped)
         {
             playerGun.enabled = false;
             rb.isKinematic = false;
@@ -34,7 +34,7 @@ public class GunCollectable : MonoBehaviour
         }
 
         //gun setup if player does start with gun.
-        if(equipped)
+        if (equipped)
         {
             playerGun.enabled = true;
             rb.isKinematic = true;
@@ -48,9 +48,9 @@ public class GunCollectable : MonoBehaviour
         //check if player is in range & if 'Q' is pressed.
         Vector3 distanceToPlayer = player.position - transform.position;
 
-        if(Time.timeScale == 1)
+        if (Time.timeScale == 1)
         {
-            if(equipped && playerGun.currentAmmo == 0)
+            if (equipped && playerGun.currentAmmo == 0)
             {
                 Drop();
             }
@@ -80,7 +80,7 @@ public class GunCollectable : MonoBehaviour
 
     public void Drop()
     {
-        if(!playerGun.currentlyReloading)
+        if (!playerGun.currentlyReloading)
         {
             //make these false so player can pick up gun.
             equipped = false;
@@ -107,7 +107,7 @@ public class GunCollectable : MonoBehaviour
             //disable script.
             playerGun.enabled = false;
             anim.GetComponent<Animator>().enabled = false;
-            
+
         }
     }
 }
