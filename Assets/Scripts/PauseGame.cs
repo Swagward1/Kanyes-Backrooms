@@ -16,10 +16,10 @@ public class PauseGame : MonoBehaviour
         //grab the scenes name
         string sceneName = currentScene.name;
 
-        if(sceneName != "Level3")
-            PauseGameState();
-        else if(sceneName == "Level3")
+        if(sceneName == "Level3")
             Level3Pause();
+        else
+            PauseGameState();
     }
 
     void PauseGameState()

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class NextStage : MonoBehaviour
 {
@@ -13,9 +14,12 @@ public class NextStage : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Player"))
         {
-            player.transform.position = playerSpawn.transform.position;
-            prevStage.SetActive(false);
-            nextStage.SetActive(true);
+            LoadCredits();
         }
+    }
+
+    public void LoadCredits()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

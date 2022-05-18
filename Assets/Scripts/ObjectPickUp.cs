@@ -9,26 +9,29 @@ public class ObjectPickUp : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetMouseButtonDown(0))
+        if(Time.timeScale == 1)
         {
-            if(heldObject == null)
+            if(Input.GetMouseButtonDown(0))
             {
-                RaycastHit hitInfo;
-                if(Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hitInfo, pickUpRange))
+                if(heldObject == null)
                 {
-                    PickUpObject(hitInfo.transform.gameObject);
+                    RaycastHit hitInfo;
+                    if(Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hitInfo, pickUpRange))
+                    {
+                        PickUpObject(hitInfo.transform.gameObject);
+                    }
+                }
+
+                else
+                {
+                    DropHeldObject();
                 }
             }
 
-            else
+            if(heldObject != null)
             {
-                DropHeldObject();
+                MoveObject();
             }
-        }
-
-        if(heldObject != null)
-        {
-            MoveObject();
         }
     }
 

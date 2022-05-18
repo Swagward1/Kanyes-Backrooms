@@ -18,6 +18,7 @@ public class Gun : MonoBehaviour
     [SerializeField] float gunForce = 30f;
     [SerializeField] Transform gunBarrel;
     [SerializeField] GameObject bullet;
+    public bool canReload;
 
     [Header("Ammo")]
     public int ammoMax = 10;
@@ -47,7 +48,7 @@ public class Gun : MonoBehaviour
         //if(Input.GetMouseButtonDown(0) && currentAmmo <= 0)
           //  StartCoroutine("ReloadGun");
 
-        if(Input.GetKeyDown(KeyCode.R))
+        if(Input.GetKeyDown(KeyCode.R) && canReload)
         {
             if(currentAmmo < ammoMax)
             {

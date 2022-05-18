@@ -20,9 +20,10 @@ public class FinishLevel : MonoBehaviour
 
         if (sceneName == "Level3")
         {
-            if (gun.dreamKills == 1)
+            if (gun.dreamKills == 12)
             {
-                Instantiate(finC, new Vector3(7, 5, -4), Quaternion.identity);
+                print("aids");
+                Instantiate(finC, new Vector3(23.5f, 119.5f, -18), Quaternion.identity);
                 gun.dreamKills = 21;
             }
         }
