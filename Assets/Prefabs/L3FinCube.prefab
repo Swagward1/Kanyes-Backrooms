@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8233d90336aea43098adf6dbabd606a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MeshFormatVersion: 2
+  m_MeshFormatVersion: 1
   m_Faces:
   - m_Indexes: 020000000300000001000000020000000100000000000000
     m_SmoothingGroup: 0
@@ -247,7 +247,6 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 0
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -263,7 +262,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -272,7 +270,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 063abcb539967a540bf4648949a64171, type: 2}
+  - {fileID: 2100000, guid: daedac71c5eba3c41af45211858c1f87, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -328,6 +326,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bca74403b76a454d884e58401d72fdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delay: 0
+  otherDelay: 0
 --- !u!1 &7500818256220107653
 GameObject:
   m_ObjectHideFlags: 0
@@ -386,3 +386,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bca74403b76a454d884e58401d72fdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delay: 1
+  otherDelay: 1
