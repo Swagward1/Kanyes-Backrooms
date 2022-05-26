@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 12ccb828343c3405fb94289774b51aad, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: a952a2f19518fb843b4ead344987fd48, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -4425,8 +4425,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1427300863}
     - target: {fileID: 6523274149357405874, guid: f602616462c55784a9a55dbbed6aba43, type: 3}
+      propertyPath: health
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6523274149357405874, guid: f602616462c55784a9a55dbbed6aba43, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6523274149357405874, guid: f602616462c55784a9a55dbbed6aba43, type: 3}
+      propertyPath: numOfHearts
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6523274149357405874, guid: f602616462c55784a9a55dbbed6aba43, type: 3}
       propertyPath: hearts.Array.size
